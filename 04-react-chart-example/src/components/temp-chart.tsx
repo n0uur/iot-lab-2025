@@ -123,7 +123,7 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function TemperatureChart() {
-  const [timeRange, setTimeRange] = React.useState("15m");
+  const [timeRange, setTimeRange] = React.useState("90d");
 
   const filteredData = chartData.filter((item) => {
     const date = new Date(item.date);

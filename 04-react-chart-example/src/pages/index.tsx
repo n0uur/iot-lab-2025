@@ -7,7 +7,6 @@ import {
   GraduationCap,
   Rocket,
   Layers,
-  ChartBarIcon,
   ExternalLinkIcon,
 } from "lucide-react";
 import { Button } from "../components/ui/button";

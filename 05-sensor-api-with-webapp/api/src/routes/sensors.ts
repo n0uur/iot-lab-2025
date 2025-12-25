@@ -55,7 +55,6 @@ sensorsRouter.post(
   async (c) => {
     const data = c.req.valid("json");
     const result = await drizzle.insert(sensorReadings).values(data).returning();
-    console.log("NEW_READING", result[0]);
 
     broadcast({ type: "NEW_READING", data: result[0] });
     return c.json({ success: true, data: result[0] }, 201);
